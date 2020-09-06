@@ -52,7 +52,7 @@ def learn_agent():
 	reward_sum = 0
 	episode_number = 1
 	total_episodes = 10000
-	init = tf.initialize_all_variables()
+	init = tf.global_variables_initializer()
 
 	with tf.Session() as sess:
 		rendering = False
